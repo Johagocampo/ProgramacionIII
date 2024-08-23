@@ -1,0 +1,57 @@
+{% extends 'main.html' %}
+{% block title %}Misión{% endblock %}
+{% block content %}
+<div class="bg-body-tertiary p-5 rounded">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            padding: 0.5rem 1rem;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 0.25rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+    <h2>Contacto:</h2>
+    <form>
+    
+        <label for="email">Correo Electrónico:</label>
+        <input type="text" >
+    
+        <label for="message">Mensaje:</label>
+        <textarea id="message" required></textarea>
+    
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+{% endblock %}
